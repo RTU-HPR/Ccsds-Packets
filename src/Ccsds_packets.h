@@ -1,5 +1,4 @@
 #pragma once
-#ifdef CCSDS_PACKETS_ENABLE
 #include <Arduino.h>
 
 // Union for converting between integer/float and byte array
@@ -109,5 +108,3 @@ void extract_ccsds_data_values(byte *ccsds_data, Converter *data_values, String 
  * @param altitude Altitude
  */
 void read_position_from_ccsds_telemetry(uint8_t *&ccsds_data, float &latitude, float &longitude, float &altitude);
-
-#endif // CCSDS_PACKETS_ENABLE

@@ -1,4 +1,3 @@
-#ifdef CCSDS_PACKETS_ENABLE
 #include "Ccsds_packets.h"
 
 uint16_t calculate_crc_16_ccitt(const uint8_t *data, uint16_t length)
@@ -293,5 +292,3 @@ void read_position_from_ccsds_telemetry(uint8_t *&ccsds_data, float &latitude, f
   longitude = data_values[1].f;
   altitude = data_values[2].f;
 }
-
-#endif
